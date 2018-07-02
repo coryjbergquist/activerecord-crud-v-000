@@ -67,7 +67,7 @@ def can_be_found_updated_and_saved
   Movie.create(title: "Awesome Flick")
   movie = Movie.find_by_title("Awesome Flick")
   if movie
-  Movie.update_title("Even Awesomer Flick")
+  Movie.set_title("Even Awesomer Flick")
 end
   Movie.save
 end
